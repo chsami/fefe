@@ -8,11 +8,7 @@ export class FeFeDropdown {
 
     // Indicate that name should be a public property on the component
     @Prop() values: string;
-
-    componentWillLoad() {
-        console.log(JSON.parse(this.values).collection);
-    }
-
+    
     render() {
         if (this.values !== undefined) {
             return (
