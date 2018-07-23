@@ -1,5 +1,5 @@
 # fefe - StencilJS
-npm i_
-npm start to run it_
+npm i  
+npm start to run it  
 
 Fefe components with StencilJS
