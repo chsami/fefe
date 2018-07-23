@@ -29,33 +29,31 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface MyComponent {
-      'first': string;
-      'last': string;
+    interface FefeDropdown {
+      'values': string;
     }
   }
 
-  interface HTMLMyComponentElement extends StencilComponents.MyComponent, HTMLStencilElement {}
+  interface HTMLFefeDropdownElement extends StencilComponents.FefeDropdown, HTMLStencilElement {}
 
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  var HTMLFefeDropdownElement: {
+    prototype: HTMLFefeDropdownElement;
+    new (): HTMLFefeDropdownElement;
   };
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'fefe-dropdown': HTMLFefeDropdownElement;
   }
   interface ElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'fefe-dropdown': HTMLFefeDropdownElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'my-component': JSXElements.MyComponentAttributes;
+      'fefe-dropdown': JSXElements.FefeDropdownAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyComponentAttributes extends HTMLAttributes {
-      'first'?: string;
-      'last'?: string;
+    export interface FefeDropdownAttributes extends HTMLAttributes {
+      'values'?: string;
     }
   }
 }

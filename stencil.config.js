@@ -1,5 +1,10 @@
+const sass = require('@stencil/sass');
+
 exports.config = {
-  namespace: 'mycomponent',
+  namespace: 'fefe-components',
+  bundles: [
+    {components: ['fefe-dropdown']}
+  ],
   outputTargets:[
     {
       type: 'dist'
@@ -8,5 +13,8 @@ exports.config = {
       type: 'www',
       serviceWorker: false
     }
+  ],
+  plugins: [
+    sass()
   ]
 };
